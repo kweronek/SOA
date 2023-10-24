@@ -1,2 +1,5 @@
 # SOA-archs
-contains differen patterns for SOA
+contains different patterns for SOA
+## HelloWorld!
+## TCP/IP-Sockets using gob
+
