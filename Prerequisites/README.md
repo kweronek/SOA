@@ -23,7 +23,7 @@ Wie erläutert basiert das Gesamtkonzept auf der Basis von Go als Programmierspr
 #### 2.5.3 Kubernetes (B)
 
 ### 2.6.Cloud-Infrastruktur
-### 2.6.1 AWS (B)
-### 2.6.2 GCP (C)
-### 2.6.3 Azure (C)
+#### 2.6.1 AWS (B)
+#### 2.6.2 GCP (C)
+#### 2.6.3 Azure (C)
 
