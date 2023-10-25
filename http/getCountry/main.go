@@ -1,4 +1,5 @@
 package main
+// einfacher http-Server, konfiguriert als Umleitung auf die Seite http://country.io
 
 import (
 	"fmt"
