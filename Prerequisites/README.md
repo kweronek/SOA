@@ -1,28 +1,23 @@
-# 1 SOA-Architecture-Patterns using Go
-This repo contains different patterns for SOA using go to demenstrate the functionality of Service-oriented Architecture Patterns
 ## 2 Prerequisites
-### 2.1 Operating System on premise
-#### 2.1.1 Linux
-#### 2.1.2 MacOS
-### 2.2 Virtualization Platforms
-### 2.2.1 Multipass
-### 2.2.1 Docker/Podman
-### 2.2.2 Kubernetes
+### 2.1 Betriebssystem
+#### 2.1.1 Linux (A)
+#### 2.1.2 MacOS (C)
+#### 2.1.3 Andere Betriebssysteme (C)
 
-### 2.2 Go-Compiler/-Environment
+### 2.2 Go-Compiler/-Environment (A)
+
+### 2.2 Virtualisierungs Plattformen
+### 2.2.1 Docker/Podman (B)
+### 2.2.1 Multipass (B)
+### 2.2.2 Kubernetes (B)
+
+## 2.2 Cloud-Infrastruktur
+### 2.2.1 AWS (B)
+### 2.2.2 GCP (C)
+### 2.2.3 Azure (C)
+
 ### 3. IDE-Tools
-### 2.3 Postman
-### 2.4 Git
-
-### 2.7 
-
-## HelloWorld!
-## TCP/IP-Sockets using gob
-## HTTP-Servers
-
-## 2.2 Cloud
-### 2.2.1 AWS
-### 2.2.2 GCP
-### 2.2.3 Azure
-
-
+### 3.1 cURL (A)
+### 2.3 Postman (B)
+### 3.1 Goland (B)
+### 2.4 Git (B)
