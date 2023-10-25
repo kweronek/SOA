@@ -19,3 +19,7 @@ go mod tidy
 ```
 go install
 ```
+Zur Verifikation der Installation:
+```
+go list -m  all
+```
