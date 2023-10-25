@@ -48,20 +48,31 @@ Die Details sind beschrieben unter:
 
 #### 2.3.2 Git (B)
 #### 2.3.3 GitLab FRA-UAS (B)
+tbd  
 #### 2.3.4 GitLab Cloud (C)
+tbd  
 #### 2.3.5 GitHub (C)
+tbd  
 
 ### 2.4. Tools
+tbd  
 #### 2.4.1 cURL (A)
+tbd  
 #### 2.4.2 Postman (B)
 
 ### 2.5.Virtualisierungs Plattformen
+tbd  
 #### 2.5.1 Docker/Podman (B)
+tbd  
 #### 2.5.2 Multipass (B)
+tbd  
 #### 2.5.3 Kubernetes (B)
 
 ### 2.6.Cloud-Infrastruktur
 #### 2.6.1 AWS (B)
+tbd  
 #### 2.6.2 GCP (C)
+tbd  
 #### 2.6.3 Azure (C)
+tbd  
 
