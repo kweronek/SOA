@@ -36,10 +36,16 @@ Erwartete Antwort (kann leicht abweichen):
 Erwartete Antwort (kann leicht abweichen):  
 ```go version go1.21.3 darwin/amd64```  
 
+### 2.3. Entwicklungsumgebung
+Zur Entwicklungsumgebung gehören zunächst alle Tools zu Entwickung der Software benötigt wird. Das sind im einfachsten Fall ein Editor und der Compiler. In der professionellen Softwareentwicklung zeigt sich schnell, dass das sehr bald nicht mehr ausreicht. Intelligente Editoren, die Syntax-fehler bereits beim Eintippen erkennen oder Befehle und Parameter vorschlagen können, einen Linter enthalten und auch gleich die Software testen und starten können, werden daher in sog. integrierten Entwicklungsumgebungen (IDE) zusammengefasst.
+Für die Entwicklung im Team wir ein Code-Repository für das Versionsmanagement nötig.  
 
-
-### 2.3. IDE
 #### 2.3.1 Goland (B)
+Der Einsatz einer IDE ist hoch sinnvoll. Die Auswahlkriterien sind, eine dedizierte Unterstützung von Go, ein professionell Tool, aber ohne Kosten. Auf Basis der Kriterien ist die Entscheidung auf Goland der Firma JetBrains gefallen. Es erfüllt alle Kriterien, da JetBrains für Studentinnen und Studenten ihre professionelle Variante kostenlos zur Verfügung stellt. Darüber hinaus besitzt die Hochschule einen Lizenz-Server, die Lizenzen für die Laborumgebung bereitstellt.  
+Die Installation ist in der Regel unkompliziert und erfolgt entweder über die sog. JetBrains Toolbox, snap (Ubuntu), .tar-file (andere Linux) oder .dmg-file (MAC).  
+Die Details sind beschrieben unter:  
+[https://www.jetbrains.com/help/go/installation-guide.html]  
+
 #### 2.3.2 Git (B)
 #### 2.3.3 GitLab FRA-UAS (B)
 #### 2.3.4 GitLab Cloud (C)
