@@ -1,0 +1,70 @@
+package main
+
+import (
+	"encoding/json"
+	"fmt"
+	"reflect"
+)
+
+type M map[string]interface{}	// just an alias
+
+var Record = []byte(`{ "bit_size": 8, "secret_key": false }`)
+
+type DB struct {
+	NumBits	int	`json:"bit_size"`
+	Secret	bool	`json:"secret_key"`
+}
+
+type User struct {
+	NumBits int `json:"num_bits"`
+}
+
+func main() {
+	d := new(DB)
+	e := json.Unmarshal(Record, d)
+	if e != nil {
+		panic(e)
+	}
+	m := mapFields(d)
+	fmt.Println("Mapped fields: ", m)
+	u := new(User)
+	o := applyMap(u, m)
+	fmt.Println("Applied map: ", o)
+	j, e := json.Marshal(o)
+	if e != nil {
+		panic(e)
+	}
+	fmt.Println("Output JSON: ", string(j))
+}
+
+func applyMap(u *User, m M) M {
+	t := reflect.TypeOf(u).Elem()
+	o := make(M)
+	for i := 0; i < t.NumField(); i++ {
+		f := t.FieldByIndex([]int{i})
+		// skip unexported fields
+		if f.PkgPath != "" {
+			continue
+		}
+		if x, ok := m[f.Name]; ok {
+			k := f.Tag.Get("json")
+			o[k] = x
+		}
+	}
+	return o
+}
+
+func mapFields(x *DB) M {
+	o := make(M)
+	v := reflect.ValueOf(x).Elem()
+	t := v.Type()
+	for i := 0; i < v.NumField(); i++ {
+		f := t.FieldByIndex([]int{i})
+		// skip unexported fields
+		if f.PkgPath != "" {
+			continue
+		}
+		o[f.Name] = v.FieldByIndex([]int{i}).Interface()
+	}
+	return o
+}
