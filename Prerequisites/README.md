@@ -15,26 +15,26 @@ Prinzipiell eignet sich auch Microsoft-Windows. Windows ist in diesem Sinne aber
 ### 2.2 Go-Compiler/-Environment (A)
 Go ist unabhängig vom Betriebssystem sehr leicht zu installiern. Sie hierzu die Originalquelle unter  
 [https://go.dev/doc/install].
-Überprüfen der Installation mit:
-```go version```
+Überprüfen der Installation mit:  
+```go version```  
+Erwartete Antwort (kann leicht abweichen):    
+```go version go1.21.3 darwin/amd64```  
+Überprüfen der Installation mit:  
+```which go```  
+Erwartete Antwort (kann leicht abweichen):   
+```/usr/local/go```  
+Überprüfen der Installation mit:  
+```echo $GOROOT```  
+Erwartete Antwort (kann leicht abweichen):   
+```/usr/local/go```  
+Überprüfen der Installation mit:  
+```echo $GOPATH```  
 Erwartete Antwort (kann leicht abweichen):  
-```go version go1.21.3 darwin/amd64```
-Überprüfen der Installation mit:
-```which go```
+```user\me\go```  
+Überprüfen der Installation mit:  
+```echo $GOPATH```  
 Erwartete Antwort (kann leicht abweichen):  
-```/usr/local/go```
-Überprüfen der Installation mit:
-```echo $GOROOT```
-Erwartete Antwort (kann leicht abweichen):  
-```/usr/local/go```
-Überprüfen der Installation mit:
-```echo $GOPATH```
-Erwartete Antwort (kann leicht abweichen):  
-```user\me\go```
-Überprüfen der Installation mit:
-```echo $GOPATH```
-Erwartete Antwort (kann leicht abweichen):  
-```go version go1.21.3 darwin/amd64```
+```go version go1.21.3 darwin/amd64```  
 
 
 
