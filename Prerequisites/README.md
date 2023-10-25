@@ -53,11 +53,42 @@ tbd
 tbd  
 #### 2.3.5 GitHub (C)
 tbd  
+#### 2.3.6 GIT: So geht's
+[https://github.com/kweronek/github-demo/tree/master]
 
 ### 2.4. Tools
 tbd  
 #### 2.4.1 cURL (A)
-tbd  
+Als einfachster Client für unsere Implementierung bietet sich der Kommandozeilen-Browser cURL an.
+cURL (Client URL) ist ein vielseitiges Werkzeug zur Übertragung von Daten mit und ohne Protokollspezifikation. Der Kommandozeilenbrowser cURL unterstützt viele Protokolle, darunter HTTP, HTTPS, FTP, FTPS, SCP, SFTP, LDAP, LDAPS, SMTP, POP3 und viele mehr. cURL wird häufig für Entwicklungs- und Debugging-Zwecke verwendet, um HTTP-Anfragen zu erstellen und daraufhin die Antworten zu inspizieren.
+
+Hier sind einige der wichtigsten Funktionalitäten, die cURL bietet:
+
+1. **Datenabfrage**: Mit cURL können Sie Daten von Servern über verschiedene Protokolle abrufen.
+  
+2. **Datenübertragung**: Sie können Daten zu einem Server senden, z.B. durch POST-Anfragen bei Webformularen oder durch Dateiuploads.
+
+3. **Header-Manipulation**: Sie können benutzerdefinierte Header zu Ihren Anfragen hinzufügen oder die Antwortheader anzeigen.
+
+4. **Authentifizierung**: cURL unterstützt verschiedene Authentifizierungsmethoden, darunter Basic, Digest, NTLM und weitere.
+
+5. **Folgen von Weiterleitungen**: cURL kann automatisch HTTP-Weiterleitungen (z.B. 302 Found) folgen.
+
+6. **Cookie-Handling**: Mit cURL können Sie Cookies setzen, auslesen und speichern.
+
+7. **Zertifikats- und SSL/TLS-Verwaltung**: Sie können cURL anweisen, SSL-Zertifikate zu überprüfen, Zertifikate zu verwenden oder die Überprüfung zu umgehen.
+
+8. **Benutzeragenten**: Sie können den User-Agent-String anpassen, um sich z.B. als bestimmter Webbrowser auszugeben.
+
+9. **Proxy-Unterstützung**: Wenn Sie über einen Proxy-Server arbeiten, kann cURL entsprechend konfiguriert werden.
+
+10. **Begrenzung der Übertragungsrate**: cURL ermöglicht es Ihnen, die Bandbreite für Up- oder Downloads zu begrenzen.
+
+11. **Zeitüberschreitungen**: Sie können eine maximale Zeit für die Anfrage festlegen, nach deren Ablauf cURL abbricht.
+
+12. **FTP-Kommandos**: Bei Verwendung von FTP können Sie zusätzliche Kommandos senden und verschiedene Methoden für den Dateitransfer auswählen.
+
+Das ist nur ein grober Überblick über die Fähigkeiten von cURL. Um alle Optionen und Möglichkeiten zu sehen, können Sie `curl --help` oder `man curl` (sofern die man-Seiten installiert sind) in der Kommandozeile eingeben. Das Tool hat eine umfangreiche Dokumentation und eine aktive Gemeinschaft, die bei Problemen hilfreich sein kann.
 #### 2.4.2 Postman (B)
 
 ### 2.5.Virtualisierungs Plattformen
