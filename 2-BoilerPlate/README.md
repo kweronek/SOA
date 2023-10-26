@@ -172,6 +172,29 @@ Docker ist ein Open-Source-Tool zur Automatisierung des Bereitstellens von Anwen
 9. **Portabilität**: Anwendungen, die in Docker-Containern verpackt sind, können konsistent über mehrere Umgebungen hinweg bereitgestellt und ausgeführt werden.
 
 Docker hat die Art und Weise revolutioniert, wie Entwickler Software erstellen, testen und verteilen, und bietet eine konsistente Umgebung von der Entwicklung bis zur Produktion. Es ist zu einem wesentlichen Tool für DevOps und Container-Orchestrierung geworden und spielt oft eine Schlüsselrolle in modernen Cloud-nativen Architekturen.
+
+Podman und Docker sind beides Containerisierungstools, die es Benutzern ermöglichen, Container zu erstellen, auszuführen und zu verwalten. Sie bieten ähnliche Funktionen und sind in vielen Aspekten kompatibel, doch es gibt einige wichtige Unterschiede zwischen den beiden. Hier sind die Hauptunterscheidungsmerkmale von Podman im Vergleich zu Docker:
+
+1. **Daemonless Architektur**: Einer der auffälligsten Unterschiede ist, dass Podman ohne einen langlaufenden Daemon funktioniert. Jeder `podman`-Befehl ist ein eigenständiger Prozess. Docker hingegen verwendet einen Client-Server-Ansatz, bei dem der Docker-Client mit dem Docker-Daemon kommuniziert.
+
+2. **Rootless Containers**: Podman kann Container als normaler Benutzer ausführen, ohne Root-Rechte zu benötigen. Dies wird als "rootless" bezeichnet und verbessert die Sicherheit, da kein Daemon mit erhöhten Privilegien erforderlich ist.
+
+3. **Kompatibilität mit Docker-CLI**: Podman bietet eine Docker-CLI-kompatible Schnittstelle, was bedeutet, dass die meisten Befehle, die mit `docker` funktionieren, auch mit `podman` funktionieren sollten, ohne Änderungen.
+
+4. **SystemD Integration**: Podman bietet bessere Integration mit `systemd`, was die Verwaltung von Containern und Pods als Systemdienste ermöglicht.
+
+5. **Pods**: Neben Containern unterstützt Podman auch "Pods", eine Gruppe von einem oder mehreren Containern, die Netzwerkressourcen teilen. Dieses Konzept wurde von Kubernetes inspiriert.
+
+6. **Keine zentrale Registry**: Im Gegensatz zu Docker, das eine zentrale Registry wie Docker Hub verwendet, legt Podman nicht fest, von wo Images geholt werden. Stattdessen verwendet es Container-Image-Spezifikationen.
+
+7. **OCI-kompatibel**: Sowohl Docker als auch Podman unterstützen den Open Container Initiative (OCI) Standard für Container-Images und Laufzeit, was die Portabilität von Containern zwischen verschiedenen Tools gewährleistet.
+
+8. **Kompatibilität mit anderen Tools**: Durch die Ähnlichkeit in der Befehlszeilenschnittstelle kann Podman oft als Drop-in-Ersatz für Docker in Skripten oder CI/CD-Pipelines verwendet werden.
+
+9. **Sicherheit**: Da Podman keinen Daemon verwendet und rootless-Container unterstützt, gibt es weniger Angriffspunkte im Vergleich zu einem Docker-Setup.
+
+Zusammengefasst: Podman und Docker ähneln sich in ihrer Kernfunktionalität stark, aber ihre Architekturen und ihr Umgang mit Sicherheit unterscheiden sich. Podman bietet Vorteile in Bezug auf Sicherheit und Flexibilität, insbesondere in Umgebungen, in denen das Fehlen eines Daemons und die Möglichkeit, rootless zu laufen, wünschenswert sind.
+
 #### 2.5.2 Multipass (B)
 Multipass ist ein Open-Source-Tool, das von Canonical, dem Unternehmen hinter Ubuntu, entwickelt wurde. Es ermöglicht Nutzern, schnell und einfach virtuelle Ubuntu-Instanzen (und andere unterstützte Betriebssysteme) auf ihrem Desktop oder in der Cloud zu starten und zu verwalten. Hier sind einige der Hauptfunktionalitäten von Multipass:
 
