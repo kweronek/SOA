@@ -1,3 +1,5 @@
+!!! deprecated, update necessary !!!
+
 gRPC in 3 minutes (Go)
 ======================
 
