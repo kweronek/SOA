@@ -78,18 +78,18 @@ Git ist ein verteiltes Versionskontrollsystem, das es Einzelpersonen und Teams e
 14. **Bisect**: Ein Tool zur Hilfe bei der Fehlersuche, mit dem man systematisch nach dem Commit suchen kann, der einen Fehler eingeführt hat.
 
 Diese Kurzbeschreibung skizziert nur die Hauptfunktionalitäten von Git. Es gibt viele weitere Befehle und Konzepte, die das Arbeiten mit Git effizienter und leistungsfähiger machen. Git hat eine steile Lernkurve, bietet aber enormen Nutzen, sobald man sich damit vertraut gemacht hat.
-#### 2.3.3 GitLab FRA-UAS (B)
+### 2.3.3 GitLab FRA-UAS (B)
 tbd  
-#### 2.3.4 GitLab Cloud (C)
+### 2.3.4 GitLab Cloud (C)
 tbd  
-#### 2.3.5 GitHub (C)
+### 2.3.5 GitHub (C)
 tbd  
-#### 2.3.6 GIT: So geht's
+### 2.3.6 GIT: So geht's
 [https://github.com/kweronek/github-demo/tree/master]
 
-### 2.4. Tools
+## 2.4. Tools
 tbd  
-#### 2.4.1 cURL (A)
+### 2.4.1 cURL (A)
 Als einfachster Client für unsere Implementierung bietet sich der Kommandozeilen-Browser cURL an.
 cURL (Client URL) ist ein vielseitiges Werkzeug zur Übertragung von Daten mit und ohne Protokollspezifikation. Der Kommandozeilenbrowser cURL unterstützt viele Protokolle, darunter HTTP, HTTPS, FTP, FTPS, SCP, SFTP, LDAP, LDAPS, SMTP, POP3 und viele mehr. cURL wird häufig für Entwicklungs- und Debugging-Zwecke verwendet, um HTTP-Anfragen zu erstellen und daraufhin die Antworten zu inspizieren.
 
@@ -120,7 +120,7 @@ Hier sind einige der wichtigsten Funktionalitäten, die cURL bietet:
 12. **FTP-Kommandos**: Bei Verwendung von FTP können Sie zusätzliche Kommandos senden und verschiedene Methoden für den Dateitransfer auswählen.
 
 Das ist nur ein grober Überblick über die Fähigkeiten von cURL. Um alle Optionen und Möglichkeiten zu sehen, können Sie `curl --help` oder `man curl` (sofern die man-Seiten installiert sind) in der Kommandozeile eingeben. Das Tool hat eine umfangreiche Dokumentation und eine aktive Gemeinschaft, die bei Problemen hilfreich sein kann.
-#### 2.4.2 Postman (B)
+### 2.4.2 Postman (B)
 Postman ist ein beliebtes Werkzeug für Entwickler, um APIs zu entwickeln, zu testen, zu dokumentieren und zu überwachen. Es bietet eine benutzerfreundliche grafische Oberfläche, die die Arbeit mit APIs deutlich vereinfacht, insbesondere im Vergleich zu reinen Kommandozeilenwerkzeugen. Hier sind einige der Hauptfunktionalitäten von Postman:
 
 1. **API-Anfragen erstellen**: Mit Postman können Benutzer HTTP-Anfragen erstellen und senden, um die Antworten von APIs zu überprüfen. Es werden alle gängigen HTTP-Methoden wie GET, POST, PUT, DELETE usw. unterstützt.
@@ -148,9 +148,9 @@ Postman ist ein beliebtes Werkzeug für Entwickler, um APIs zu entwickeln, zu te
 12. **Import/Export**: Sie können API-Definitionen im OpenAPI, RAML oder WADL Format importieren und Postman-Sammlungen und Umgebungen exportieren.
 
 Dies ist nur ein kurzer Überblick über die Fähigkeiten von Postman. Das Tool hat im Laufe der Zeit viele zusätzliche Funktionen erhalten und wird weiterhin regelmäßig aktualisiert und erweitert. Es bietet auch eine umfangreiche Dokumentation und eine aktive Community, die bei Fragen und Problemen hilfreich sein kann.
-### 2.5.Virtualisierungs Plattformen
+## 2.5.Virtualisierungs Plattformen
 tbd  
-#### 2.5.1 Docker (B)
+### 2.5.1 Docker (B)
 Docker ist ein Open-Source-Tool zur Automatisierung des Bereitstellens von Anwendungen in leichtgewichtigen, portablen Containern. Es ermöglicht Entwicklern, Anwendungen und ihre Abhängigkeiten in einem einheitlichen Paket zu kapseln, das überall – sowohl auf dem lokalen Entwicklungssystem als auch in der Cloud – ausgeführt werden kann. Hier sind einige der wichtigsten Hauptfunktionalitäten von Docker:
 
 1. **Container**: Docker ermöglicht das Packen und Isolieren von Anwendungen mit ihren Abhängigkeiten in Containern.
@@ -173,7 +173,7 @@ Docker ist ein Open-Source-Tool zur Automatisierung des Bereitstellens von Anwen
 
 Docker hat die Art und Weise revolutioniert, wie Entwickler Software erstellen, testen und verteilen, und bietet eine konsistente Umgebung von der Entwicklung bis zur Produktion. Es ist zu einem wesentlichen Tool für DevOps und Container-Orchestrierung geworden und spielt oft eine Schlüsselrolle in modernen Cloud-nativen Architekturen.
 
-#### 2.5.2 Podman (C)
+### 2.5.2 Podman (C)
 
 Podman und Docker sind beides Containerisierungstools, die es Benutzern ermöglichen, Container zu erstellen, auszuführen und zu verwalten. Sie bieten ähnliche Funktionen und sind in vielen Aspekten kompatibel, doch es gibt einige wichtige Unterschiede zwischen den beiden. Hier sind die Hauptunterscheidungsmerkmale von Podman im Vergleich zu Docker:
 
@@ -197,7 +197,7 @@ Podman und Docker sind beides Containerisierungstools, die es Benutzern ermögli
 
 Zusammengefasst: Podman und Docker ähneln sich in ihrer Kernfunktionalität stark, aber ihre Architekturen und ihr Umgang mit Sicherheit unterscheiden sich. Podman bietet Vorteile in Bezug auf Sicherheit und Flexibilität, insbesondere in Umgebungen, in denen das Fehlen eines Daemons und die Möglichkeit, rootless zu laufen, wünschenswert sind.
 
-#### 2.5.3 Multipass (B)
+### 2.5.3 Multipass (B)
 Multipass ist ein Open-Source-Tool, das von Canonical, dem Unternehmen hinter Ubuntu, entwickelt wurde. Es ermöglicht Nutzern, schnell und einfach virtuelle Ubuntu-Instanzen (und andere unterstützte Betriebssysteme) auf ihrem Desktop oder in der Cloud zu starten und zu verwalten. Hier sind einige der Hauptfunktionalitäten von Multipass:
 
 1. **Schnelle Instanzerstellung**: Mit einem einfachen Befehl können Benutzer eine neue virtuelle Maschine basierend auf den neuesten verfügbaren Ubuntu-Images (oder anderen unterstützten Images) erstellen.
@@ -224,7 +224,7 @@ Multipass ist ein Open-Source-Tool, das von Canonical, dem Unternehmen hinter Ub
 
 Multipass zielt darauf ab, Entwicklern und Systemadministratoren eine einfache und konsistente Umgebung zur Verfügung zu stellen, um Ubuntu (und andere unterstützte Betriebssysteme) in einer isolierten, virtuellen Umgebung schnell zu testen, zu entwickeln oder einfach nur zu verwenden. Es bietet viele der Vorteile von containerisierten Lösungen, bietet jedoch eine vollständige VM-Umgebung.
 
-#### 2.5.4 Kubernetes (B)
+### 2.5.4 Kubernetes (B)
 Kubernetes, oft einfach als "K8s" abgekürzt, ist ein Open-Source-Container-Orchestrierungssystem zur Automatisierung der Bereitstellung, Skalierung und Verwaltung von containerisierten Anwendungen. Hier sind einige der wichtigsten Hauptfunktionalitäten von Kubernetes:
 
 1. **Pods**: Die kleinste und einfachste Einheit in Kubernetes. Ein Pod kann einen oder mehrere Container beinhalten, die gemeinsam verwaltet werden.
@@ -261,8 +261,8 @@ Kubernetes bietet eine umfangreiche und modulare Plattform, die es Entwicklern u
 2.5.7 wget (A)
 2.5.8 protoc (A)
 
-### 2.6.Cloud-Infrastruktur
-#### 2.6.1 AWS (B)
+## 2.6.Cloud-Infrastruktur
+### 2.6.1 AWS (B)
 AWS (Amazon Web Services) ist die Cloud-Computing-Plattform von Amazon, die eine breite Palette von IT-Diensten bietet. AWS ermöglicht es Unternehmen, Rechenkapazität, Speicher und andere Ressourcen über das Internet zu mieten, anstatt physische Server zu kaufen und in eigenen Rechenzentren zu betreiben. Hier ist eine kurze Erklärung zu AWS Cloud Services:
 
 **AWS Cloud Services** sind eine Sammlung von Remote-Computing-Diensten (auch als Webdienste bezeichnet) von Amazon. Diese Dienste bieten eine Suite von Cloud-basierten Produkten, die Rechenleistung, Speicheroptionen, Netzwerking und Datenbanken, Entwickler-Tools, Maschinenlernen, Identitäts- und Zugriffsmanagement, Sicherheits-Tools und viele andere Funktionen bieten, um Unternehmen bei der Skalierung und Wachstum zu unterstützen. 
@@ -280,7 +280,8 @@ Einige der bekanntesten AWS-Dienste umfassen:
 - **IAM (Identity and Access Management)**: Ein Dienst, der die Authentifizierung und Autorisierung für AWS-Ressourcen steuert.
 
 Dank dieser Dienste können Unternehmen Ressourcen je nach Bedarf bereitstellen oder reduzieren (ein Konzept, das oft als "Elastizität" bezeichnet wird) und nur für das bezahlen, was sie tatsächlich verwenden. Das Modell von AWS hat dazu beigetragen, die Art und Weise, wie Unternehmen IT-Ressourcen betrachten und nutzen, zu revolutionieren. Es ermöglicht schnelle Innovationen, Skalierbarkeit und Flexibilität.
-#### 2.6.2 GCP (C)
+
+### 2.6.2 GCP (C)
 Die Google Cloud Platform (GCP) ist die Cloud-Computing-Plattform von Google, die eine Vielzahl von Diensten für Rechenleistung, Datenspeicherung, Datenanalyse, Maschinenlernen und andere Cloud-basierte Aufgaben bietet. Mit GCP können Unternehmen, Entwickler und andere Nutzer IT-Ressourcen von Google's hochmodernen Rechenzentren nutzen. Hier ist eine kurze Erklärung zu GCP:
 
 **Google Cloud Platform (GCP)** bietet eine Suite von Cloud-basierten Diensten und Produkten, die Unternehmen dabei helfen, in der Cloud zu bauen, zu betreiben und zu skalieren. Die Plattform nutzt die gleiche Infrastruktur, die Google verwendet, um seine eigenen Produkte wie Google Suche, YouTube und Gmail zu betreiben.
@@ -304,7 +305,8 @@ Einige der Hauptdienste und Produkte von GCP umfassen:
 - **Pub/Sub**: Ein Echtzeit-Nachrichtenübermittlungsdienst.
 
 Die Google Cloud Platform zeichnet sich durch ihre leistungsstarken Maschinenlernalgorithmen, ihre Datenanalysefunktionen und ihre offenen APIs aus. Sie ist für Unternehmen konzipiert, die hochverfügbare und skalierbare Cloud-Computing-Lösungen suchen und dabei von der Sicherheit und Effizienz profitieren möchten, die Google's Infrastruktur bietet. 
-#### 2.6.3 Azure (C)
+
+### 2.6.3 Azure (C)
 Microsoft Azure, oft einfach als Azure bezeichnet, ist die Cloud-Computing-Plattform von Microsoft, die eine Vielzahl von Diensten und Lösungen in den Bereichen Computing, Analytik, Speicherung und Netzwerk bietet. Azure ermöglicht es Unternehmen und Entwicklern, ihre Anwendungen in Microsoft-eigenen und -verwalteten Rechenzentren zu erstellen, zu hosten und zu skalieren. Hier ist eine kurze Erklärung zu Microsoft Azure:
 
 **Microsoft Azure Cloud Platform** ist eine stetig wachsende Sammlung von Cloud-Diensten, mit denen Unternehmen jede Art von Lösung – von einfachen Web-Apps bis zu komplexen, verteilt arbeitenden Anwendungen – konfrontieren, erstellen und verwalten können. Azure stellt die notwendige Infrastruktur bereit, damit Unternehmen Anwendungen in der Cloud betreiben und Ressourcen nach Bedarf skalieren können.
@@ -330,4 +332,3 @@ Einige der Hauptdienste und Produkte von Azure umfassen:
 - **Azure Functions**: Ein serverloser Computing-Dienst, der es Entwicklern ermöglicht, Code in Reaktion auf Ereignisse auszuführen, ohne eine vollständige Anwendung oder Infrastruktur zu verwalten.
 
 Microsoft Azure bietet eine breite Palette von Diensten und Lösungen, um unterschiedliche Geschäftsanforderungen zu erfüllen. Es unterstützt mehrere Programmiersprachen, Frameworks, Betriebssysteme, Datenbanken und Geräte, wodurch Azure zu einer vielseitigen Cloud-Plattform für verschiedene Anwendungs- und Entwicklungsszenarien wird.
-
