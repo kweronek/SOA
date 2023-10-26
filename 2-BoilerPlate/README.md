@@ -257,6 +257,10 @@ Kubernetes, oft einfach als "K8s" abgekürzt, ist ein Open-Source-Container-Orch
 
 Kubernetes bietet eine umfangreiche und modulare Plattform, die es Entwicklern und Administratoren ermöglicht, containerisierte Anwendungen in verschiedensten Umgebungen, von On-Premises-Infrastrukturen bis hin zu Cloud-Anbietern, zu orchestrieren. Es hat eine aktive Gemeinschaft und wird ständig weiterentwickelt und erweitert.
 
+2.5.6 kubectl (B)
+2.5.7 wget (A)
+2.5.8 protoc (A)
+
 ### 2.6.Cloud-Infrastruktur
 #### 2.6.1 AWS (B)
 AWS (Amazon Web Services) ist die Cloud-Computing-Plattform von Amazon, die eine breite Palette von IT-Diensten bietet. AWS ermöglicht es Unternehmen, Rechenkapazität, Speicher und andere Ressourcen über das Internet zu mieten, anstatt physische Server zu kaufen und in eigenen Rechenzentren zu betreiben. Hier ist eine kurze Erklärung zu AWS Cloud Services:
