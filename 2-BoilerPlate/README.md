@@ -1,4 +1,3 @@
-[TOC]
 ## 2 Boiler-Plate
 Unter Boiler-plate (Herdplatte) wir alles das verstanden, was benötigt wird um Anwendungssoftware entwickeln zu können. Da SOA zunächst Technlogie-offen ist, kann mann alles verwenden, wird aber dann nie fertig und kann auch keinen fragen, da jeder etwas anderes benutzt. Der Autor hat daher versucht, die Technologien auszuwählen, die einerseits die Grundlagen gut vermitteln können, wahrscheinlich später im Beruf gebraucht werden und die schnell und einfach zu installieren und zu benutzen sind. Außerdem müssen aller Dinge ja auch getestet werden und im Zweifel Unterstützung geleistet zu werden.  
 Wie erläutert basiert das Gesamtkonzept auf der Basis von Go als Programmiersprache auf Linux. Einer der Hauptgründe ist, dass die meisten der aktuellen Cloud-/Microservices Applikationen aber auch Technologien mit Go auf Linux entwickelt sind oder werden.
@@ -260,9 +259,71 @@ Kubernetes bietet eine umfangreiche und modulare Plattform, die es Entwicklern u
 
 ### 2.6.Cloud-Infrastruktur
 #### 2.6.1 AWS (B)
-tbd  
+AWS (Amazon Web Services) ist die Cloud-Computing-Plattform von Amazon, die eine breite Palette von IT-Diensten bietet. AWS ermöglicht es Unternehmen, Rechenkapazität, Speicher und andere Ressourcen über das Internet zu mieten, anstatt physische Server zu kaufen und in eigenen Rechenzentren zu betreiben. Hier ist eine kurze Erklärung zu AWS Cloud Services:
+
+**AWS Cloud Services** sind eine Sammlung von Remote-Computing-Diensten (auch als Webdienste bezeichnet) von Amazon. Diese Dienste bieten eine Suite von Cloud-basierten Produkten, die Rechenleistung, Speicheroptionen, Netzwerking und Datenbanken, Entwickler-Tools, Maschinenlernen, Identitäts- und Zugriffsmanagement, Sicherheits-Tools und viele andere Funktionen bieten, um Unternehmen bei der Skalierung und Wachstum zu unterstützen. 
+
+Einige der bekanntesten AWS-Dienste umfassen:
+
+- **EC2 (Elastic Compute Cloud)**: Ein Dienst, der virtuelle Maschinen in der Cloud bereitstellt.
+  
+- **S3 (Simple Storage Service)**: Ein skalierbarer Speicherdienst.
+  
+- **RDS (Relational Database Service)**: Ein Dienst zum Betrieb und Skalieren von relationalen Datenbanken in der Cloud.
+
+- **Lambda**: Ein serverloser Computing-Dienst.
+
+- **IAM (Identity and Access Management)**: Ein Dienst, der die Authentifizierung und Autorisierung für AWS-Ressourcen steuert.
+
+Dank dieser Dienste können Unternehmen Ressourcen je nach Bedarf bereitstellen oder reduzieren (ein Konzept, das oft als "Elastizität" bezeichnet wird) und nur für das bezahlen, was sie tatsächlich verwenden. Das Modell von AWS hat dazu beigetragen, die Art und Weise, wie Unternehmen IT-Ressourcen betrachten und nutzen, zu revolutionieren. Es ermöglicht schnelle Innovationen, Skalierbarkeit und Flexibilität.
 #### 2.6.2 GCP (C)
-tbd  
+Die Google Cloud Platform (GCP) ist die Cloud-Computing-Plattform von Google, die eine Vielzahl von Diensten für Rechenleistung, Datenspeicherung, Datenanalyse, Maschinenlernen und andere Cloud-basierte Aufgaben bietet. Mit GCP können Unternehmen, Entwickler und andere Nutzer IT-Ressourcen von Google's hochmodernen Rechenzentren nutzen. Hier ist eine kurze Erklärung zu GCP:
+
+**Google Cloud Platform (GCP)** bietet eine Suite von Cloud-basierten Diensten und Produkten, die Unternehmen dabei helfen, in der Cloud zu bauen, zu betreiben und zu skalieren. Die Plattform nutzt die gleiche Infrastruktur, die Google verwendet, um seine eigenen Produkte wie Google Suche, YouTube und Gmail zu betreiben.
+
+Einige der Hauptdienste und Produkte von GCP umfassen:
+
+- **Compute Engine**: Ein Infrastructure-as-a-Service (IaaS) Dienst, der virtuelle Maschinen in der Cloud bereitstellt.
+
+- **App Engine**: Eine Platform-as-a-Service (PaaS) Lösung, die Entwicklern das Erstellen und Hosten von Webanwendungen in von Google verwalteten Rechenzentren ermöglicht.
+
+- **Kubernetes Engine**: Ein verwalteter Kubernetes-Dienst zur Orchestrierung von Docker-Containern.
+
+- **Cloud Storage**: Ein skalierbarer Objektspeicherdienst.
+
+- **BigQuery**: Ein vollständig verwalteter Data Warehouse-Dienst für große Datenanalysen.
+
+- **Cloud Spanner**: Eine vollständig verwaltete, skalierbare und konsistente relationale Datenbank.
+
+- **Cloud Machine Learning Engine**: Ein Dienst, der Maschinenlernen in der Cloud ermöglicht und auf TensorFlow basiert.
+
+- **Pub/Sub**: Ein Echtzeit-Nachrichtenübermittlungsdienst.
+
+Die Google Cloud Platform zeichnet sich durch ihre leistungsstarken Maschinenlernalgorithmen, ihre Datenanalysefunktionen und ihre offenen APIs aus. Sie ist für Unternehmen konzipiert, die hochverfügbare und skalierbare Cloud-Computing-Lösungen suchen und dabei von der Sicherheit und Effizienz profitieren möchten, die Google's Infrastruktur bietet. 
 #### 2.6.3 Azure (C)
-tbd  
+Microsoft Azure, oft einfach als Azure bezeichnet, ist die Cloud-Computing-Plattform von Microsoft, die eine Vielzahl von Diensten und Lösungen in den Bereichen Computing, Analytik, Speicherung und Netzwerk bietet. Azure ermöglicht es Unternehmen und Entwicklern, ihre Anwendungen in Microsoft-eigenen und -verwalteten Rechenzentren zu erstellen, zu hosten und zu skalieren. Hier ist eine kurze Erklärung zu Microsoft Azure:
+
+**Microsoft Azure Cloud Platform** ist eine stetig wachsende Sammlung von Cloud-Diensten, mit denen Unternehmen jede Art von Lösung – von einfachen Web-Apps bis zu komplexen, verteilt arbeitenden Anwendungen – konfrontieren, erstellen und verwalten können. Azure stellt die notwendige Infrastruktur bereit, damit Unternehmen Anwendungen in der Cloud betreiben und Ressourcen nach Bedarf skalieren können.
+
+Einige der Hauptdienste und Produkte von Azure umfassen:
+
+- **Azure Virtual Machines (VMs)**: Ein Infrastructure-as-a-Service (IaaS) Dienst, der es Benutzern ermöglicht, virtuelle Maschinen in der Azure-Cloud zu erstellen und zu betreiben.
+
+- **Azure Blob Storage**: Ein Objektspeicherdienst für unstrukturierte Daten.
+
+- **Azure SQL Database**: Ein verwalteter relationaler Datenbankdienst basierend auf SQL Server.
+
+- **Azure Kubernetes Service (AKS)**: Ein verwalteter Kubernetes-Container-Orchestrierungsdienst.
+
+- **Azure Active Directory**: Ein Identitätsdienst, der Single Sign-On und Multi-Factor-Authentication bietet.
+
+- **Azure Cosmos DB**: Eine NoSQL-Datenbank für globale Anwendungen, die horizontale Skalierung und Multi-Model-Datenbankunterstützung bietet.
+
+- **Azure App Service**: Ein Platform-as-a-Service (PaaS) Angebot, das es Entwicklern ermöglicht, Webanwendungen und APIs in der Azure-Cloud zu erstellen und zu hosten.
+
+- **Azure DevOps Services**: Tools für Softwareentwicklung, Zusammenarbeit und CI/CD (Continuous Integration/Continuous Deployment).
+
+- **Azure Functions**: Ein serverloser Computing-Dienst, der es Entwicklern ermöglicht, Code in Reaktion auf Ereignisse auszuführen, ohne eine vollständige Anwendung oder Infrastruktur zu verwalten.
+
+Microsoft Azure bietet eine breite Palette von Diensten und Lösungen, um unterschiedliche Geschäftsanforderungen zu erfüllen. Es unterstützt mehrere Programmiersprachen, Frameworks, Betriebssysteme, Datenbanken und Geräte, wodurch Azure zu einer vielseitigen Cloud-Plattform für verschiedene Anwendungs- und Entwicklungsszenarien wird.
 
