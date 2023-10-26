@@ -150,7 +150,7 @@ Postman ist ein beliebtes Werkzeug für Entwickler, um APIs zu entwickeln, zu te
 Dies ist nur ein kurzer Überblick über die Fähigkeiten von Postman. Das Tool hat im Laufe der Zeit viele zusätzliche Funktionen erhalten und wird weiterhin regelmäßig aktualisiert und erweitert. Es bietet auch eine umfangreiche Dokumentation und eine aktive Community, die bei Fragen und Problemen hilfreich sein kann.
 ### 2.5.Virtualisierungs Plattformen
 tbd  
-#### 2.5.1 Docker/Podman (B)
+#### 2.5.1 Docker (B)
 Docker ist ein Open-Source-Tool zur Automatisierung des Bereitstellens von Anwendungen in leichtgewichtigen, portablen Containern. Es ermöglicht Entwicklern, Anwendungen und ihre Abhängigkeiten in einem einheitlichen Paket zu kapseln, das überall – sowohl auf dem lokalen Entwicklungssystem als auch in der Cloud – ausgeführt werden kann. Hier sind einige der wichtigsten Hauptfunktionalitäten von Docker:
 
 1. **Container**: Docker ermöglicht das Packen und Isolieren von Anwendungen mit ihren Abhängigkeiten in Containern.
@@ -172,6 +172,8 @@ Docker ist ein Open-Source-Tool zur Automatisierung des Bereitstellens von Anwen
 9. **Portabilität**: Anwendungen, die in Docker-Containern verpackt sind, können konsistent über mehrere Umgebungen hinweg bereitgestellt und ausgeführt werden.
 
 Docker hat die Art und Weise revolutioniert, wie Entwickler Software erstellen, testen und verteilen, und bietet eine konsistente Umgebung von der Entwicklung bis zur Produktion. Es ist zu einem wesentlichen Tool für DevOps und Container-Orchestrierung geworden und spielt oft eine Schlüsselrolle in modernen Cloud-nativen Architekturen.
+
+#### 2.5.2 Podman (C)
 
 Podman und Docker sind beides Containerisierungstools, die es Benutzern ermöglichen, Container zu erstellen, auszuführen und zu verwalten. Sie bieten ähnliche Funktionen und sind in vielen Aspekten kompatibel, doch es gibt einige wichtige Unterschiede zwischen den beiden. Hier sind die Hauptunterscheidungsmerkmale von Podman im Vergleich zu Docker:
 
@@ -195,7 +197,7 @@ Podman und Docker sind beides Containerisierungstools, die es Benutzern ermögli
 
 Zusammengefasst: Podman und Docker ähneln sich in ihrer Kernfunktionalität stark, aber ihre Architekturen und ihr Umgang mit Sicherheit unterscheiden sich. Podman bietet Vorteile in Bezug auf Sicherheit und Flexibilität, insbesondere in Umgebungen, in denen das Fehlen eines Daemons und die Möglichkeit, rootless zu laufen, wünschenswert sind.
 
-#### 2.5.2 Multipass (B)
+#### 2.5.3 Multipass (B)
 Multipass ist ein Open-Source-Tool, das von Canonical, dem Unternehmen hinter Ubuntu, entwickelt wurde. Es ermöglicht Nutzern, schnell und einfach virtuelle Ubuntu-Instanzen (und andere unterstützte Betriebssysteme) auf ihrem Desktop oder in der Cloud zu starten und zu verwalten. Hier sind einige der Hauptfunktionalitäten von Multipass:
 
 1. **Schnelle Instanzerstellung**: Mit einem einfachen Befehl können Benutzer eine neue virtuelle Maschine basierend auf den neuesten verfügbaren Ubuntu-Images (oder anderen unterstützten Images) erstellen.
@@ -222,7 +224,7 @@ Multipass ist ein Open-Source-Tool, das von Canonical, dem Unternehmen hinter Ub
 
 Multipass zielt darauf ab, Entwicklern und Systemadministratoren eine einfache und konsistente Umgebung zur Verfügung zu stellen, um Ubuntu (und andere unterstützte Betriebssysteme) in einer isolierten, virtuellen Umgebung schnell zu testen, zu entwickeln oder einfach nur zu verwenden. Es bietet viele der Vorteile von containerisierten Lösungen, bietet jedoch eine vollständige VM-Umgebung.
 
-#### 2.5.3 Kubernetes (B)
+#### 2.5.4 Kubernetes (B)
 Kubernetes, oft einfach als "K8s" abgekürzt, ist ein Open-Source-Container-Orchestrierungssystem zur Automatisierung der Bereitstellung, Skalierung und Verwaltung von containerisierten Anwendungen. Hier sind einige der wichtigsten Hauptfunktionalitäten von Kubernetes:
 
 1. **Pods**: Die kleinste und einfachste Einheit in Kubernetes. Ein Pod kann einen oder mehrere Container beinhalten, die gemeinsam verwaltet werden.
@@ -254,6 +256,7 @@ Kubernetes, oft einfach als "K8s" abgekürzt, ist ein Open-Source-Container-Orch
 14. **Rollout und Rollback**: Kubernetes ermöglicht es, Änderungen an Anwendungen schrittweise auszurollen und bei Problemen auf eine vorherige Version zurückzukehren.
 
 Kubernetes bietet eine umfangreiche und modulare Plattform, die es Entwicklern und Administratoren ermöglicht, containerisierte Anwendungen in verschiedensten Umgebungen, von On-Premises-Infrastrukturen bis hin zu Cloud-Anbietern, zu orchestrieren. Es hat eine aktive Gemeinschaft und wird ständig weiterentwickelt und erweitert.
+
 ### 2.6.Cloud-Infrastruktur
 #### 2.6.1 AWS (B)
 tbd  
