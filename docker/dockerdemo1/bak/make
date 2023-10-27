@@ -1,0 +1,8 @@
+#
+# Makefile to build and run the container
+#
+docker image build . -t kwer:contbake
+#
+docker run   --rm   --disable-content-trust   --name contbake   kwer:contbake  &
+#
+###### EOF ######
