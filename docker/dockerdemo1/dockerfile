@@ -8,9 +8,6 @@
 # name of this image in this context is "builder"!
 FROM golang:alpine
 #
-# Create a subdirectory for build
-# RUN mkdir -pv /build
-#
 # Copy all files from the source-directory to to the build directory
 COPY . /./
 #
