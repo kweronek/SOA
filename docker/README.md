@@ -1,0 +1,8 @@
+## Docker
+Dieser Bereich dient dazu, zu zeigen, wie Go-Programme in Images eingearbeitet werden können um anschließend auf einer Containerplattform laufen gelassen zu werden. Wegen der Einfachheit kommt hier Docker zum Einsatz.
+Die Drei Beispiele sind
+1. dockerdemo1
+   dockerdemo verucht es so einfach wie möglich. Das bring gewisse Nachteile mit sich.
+2. Diese Nachteile werden in dockerdemo2 behoben. Hier kommt ein Doublestage-Image-Build zum Einsatz. Darüber hinause wird beim Bauen und beim Starten der Images noch Parameter mitgegeben die die Orgestrierung vereinfachen.
+3. 3. dockertimesrv
+   Bei dockertimesrv handelt es sich um ein Beispiel aus dem Internet. Hier wird ein Zeitserver als Container auf Docker bereitgestellt. Er ermöchtlicht mittels http-Anfragen die Zeit als Antwort zu bekommen.
