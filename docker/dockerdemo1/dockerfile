@@ -1,31 +1,29 @@
 #
-# Dockerfile to create lightweight go-executables by means of staged dockercontainer
+# Dockerfile to create lightweight go-executables by means of a simple dockercontainer
 #
 # Prerequisite: A volume needs to be attached in Docker
 #
 #
-##### fist stage (builder)
-#
 # Use the image golang:alpine from dockerhub to support golang build on alpine linux
 # name of this image in this context is "builder"!
-FROM golang:alpine as builder
+FROM golang:alpine
 #
 # Create a subdirectory for build
-RUN mkdir -pv /build
+# RUN mkdir -pv /build
 #
 # Copy all files from the source-directory to to the build directory
-COPY . /build/
+COPY . /./
 #
 # Set the actual WORKDIR to the build-directory
-WORKDIR /build
+WORKDIR /./
 #
 # Download Go modules and dependencies
 RUN go mod download
 #
 # Build the executable and name it main
-RUN go build -o ./main
+RUN go build -o ./main .
 #
-# Start the executable main in the actual WORKDIR (/build)
+# Start the executable main in the actual WORKDIR (/./)
 CMD ["./main"]
 #
 ###### EOF ######

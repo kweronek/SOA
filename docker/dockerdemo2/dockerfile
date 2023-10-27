@@ -23,7 +23,7 @@ WORKDIR /build
 RUN go mod download
 #
 # Build the executable and name it main
-RUN go build -o ./main
+RUN go build -o ./main .
 #
 ### second stage (runner)
 # Generate a new empty image "scratch" without overhead for Linux and Go

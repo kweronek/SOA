@@ -1,0 +1,8 @@
+#
+# Makefile to build and run the container
+#
+docker image build . -t dockertimesrv:1.0
+#
+docker run  -p:8080:8080  --rm   --disable-content-trust   --name timsrv   dockertimesrv:1.0  &
+#
+###### EOF ######
