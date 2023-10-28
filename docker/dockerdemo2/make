@@ -1,8 +1,0 @@
-#
-# Makefile to build and run the container
-#
-docker image build . -t dockerdemo2:1.0
-#
-docker run   --rm   --disable-content-trust   --name ddemo2   dockerdemo2:1.0  &
-#
-###### EOF ######

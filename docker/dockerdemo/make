@@ -1,0 +1,9 @@
+#
+# Makefile to build and run the container with dockerdemo simple version
+#
+docker image build . -t dockerdemo:1.0
+#
+# run the container, --rm leads to deletion of unused fils after uasage
+docker run  --rm   --name bake-einfach  dockerdemo:1.0  &
+#
+###### EOF ######

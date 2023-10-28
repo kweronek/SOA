@@ -1,0 +1,12 @@
+#
+# Makefile to build and run the container with multistage as best practice
+#
+# -f specifies the dockerfile, -t tags the image with nametag and version, version can be a name also
+docker image build -f Dockerfile.multistage . -t dockerdemo:2.0
+#
+# --name specifies the name of the container instance
+# --rm removes the container from everywhere to save memory
+docker run  --rm  --name beacon-prod  dockerdemo:2.0  &
+docker run  --rm  --name beacon-2     dockerdemo:2.0  &
+#
+###### EOF ######
