@@ -1,4 +1,4 @@
-# Hello World in Go
+## Hello World in Go
 
 Das Programm hello.go dient dazu, zu testen, ob die Go-Installation prinzipiell functioniert hat. Es zeigt den grundätzlichen Aufbau eines Go-Programm mit package, include und der Ausgabe eines Textes. Es zeigt auch, dass Go sehr einfach mit Unicode-Zeichen umgegehen kann.  
 Zunächts versuche man '''go run hello.go''' Das compiliert das Programm und führt es bei fehlerfreiheit unmittelbar aus.  
