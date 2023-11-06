@@ -6,7 +6,7 @@ import (
 )
 
 type Message struct {
-	Name string		`json:"name"`
+	Name string	`json:"name"`
 	Body string     `json:"body"`
 	Time int64      `json:"time"`
 }
