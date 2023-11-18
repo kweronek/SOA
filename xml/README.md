@@ -9,25 +9,25 @@ ist XML flexibler und dient zur Beschreibung, Speicherung und zum Austausch von 
 
 Einige wichtige Eigenschaften von XML sind:
 
-* Selbstbeschreibend:
+* Selbstbeschreibend:  
   XML-Dokumente enthalten sowohl Daten als auch Tags, die die Daten beschreiben.
   Diese Tags sind nicht vordefiniert wie in HTML, sondern können vom Entwickler frei definiert werden,
   um spezifische Informationen und Strukturen darzustellen.
 
-* Strukturiert:
+* Strukturiert:  
   XML ermöglicht es, Daten hierarchisch und strukturiert zu speichern.
   Diese Struktur wird durch Start- und End-Tags, Attribute in den Tags und verschachtelte Elemente definiert.
 
-* Plattformunabhängig und Sprachenneutral:
+* Plattformunabhängig und Sprachenneutral:  
   Da XML reiner Text ist, kann es auf jedem System und in jeder Umgebung verwendet werden.
   Dies macht es zu einem idealen Format für den Datenaustausch zwischen unterschiedlichen Systemen und Anwendungen.
 
-* Erweiterbar:
+* Erweiterbar:  
   Wie der Name schon sagt, ist XML erweiterbar.
   Dies bedeutet, dass Sie die Tags, die Sie verwenden, selbst definieren und erweitern können,
   um Ihren spezifischen Bedürfnissen gerecht zu werden.
 
-* standardisiert:
+* standardisiert:  
   XML ist ein Standard der World Wide Web Consortium (W3C), was bedeutet,
   dass es allgemein anerkannte Regeln und Praktiken für seine Verwendung gibt.
 
