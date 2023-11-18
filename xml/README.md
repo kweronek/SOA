@@ -35,6 +35,8 @@ XML wird in vielen verschiedenen Bereichen eingesetzt,
 von Web-Entwicklung, Softwarekonfiguration, Datenintegration, Nachrichtenübermittlung (wie SOAP, ein Protokoll für Web Services, 
 das auf XML basiert) bis hin zur Speicherung von Daten wie Microsoft Office-Dokumenten (z.B. Word, Excel) und vielen anderen Anwendungen.
 
+XML lernt man z.B. mit [https://www.w3schools.com/xml/](W3Schools)
+
 
 
 
