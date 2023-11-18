@@ -35,7 +35,10 @@ XML wird in vielen verschiedenen Bereichen eingesetzt,
 von Web-Entwicklung, Softwarekonfiguration, Datenintegration, Nachrichtenübermittlung (wie SOAP, ein Protokoll für Web Services, 
 das auf XML basiert) bis hin zur Speicherung von Daten wie Microsoft Office-Dokumenten (z.B. Word, Excel) und vielen anderen Anwendungen.
 
-XML lernt man z.B. mit [W3Schools-XML](https://www.w3schools.com/xml/)
+XML lernt man z.B. mit [W3Schools-XML](https://www.w3schools.com/xml/)  
+Zur Überprüfung von XML-Dateien kann man sog. XML-Validatoren einsetzen z.B.
+* online: [XML-Validator](https://www.w3schools.com/xml/xml_validator.asp)
+* im Program: [go-xsd-validate](https://github.com/terminalstatic/go-xsd-validate)
 
 ## XML mit Go
 
