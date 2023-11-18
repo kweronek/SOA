@@ -37,6 +37,9 @@ das auf XML basiert) bis hin zur Speicherung von Daten wie Microsoft Office-Doku
 
 XML lernt man z.B. mit [W3Schools-XML](https://www.w3schools.com/xml/)
 
+## XML mit Go
+
+
 
 
 
