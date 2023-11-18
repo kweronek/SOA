@@ -1,0 +1,45 @@
+#
+######### Dockerfile to create lightweight go-executables by means of staged dockercontainer
+#
+# Prerequisite: A volume needs to be attached in Docker
+#
+####### fist stage (builder)
+#
+### Use the image golang:alpine from dockerhub to support golang build on alpine linux
+# name of this image in this context is "builder"!
+FROM golang:alpine as builder
+#
+## Create a subdirectory for build
+RUN mkdir -pv /build
+#
+### Copy all files from the source-directory to to the build directory
+COPY . /build/
+#
+### Set the actual WORKDIR to the build-directory
+WORKDIR /build
+#
+### Download Go modules and dependencies
+RUN go mod download
+#
+### Build the executable and name it main
+# With CGO_ENABLED=0 you got a staticaly-linked binary (see: https://en.wikipedia.org/wiki/Static_build) 
+# so it will run without any external dependencies (you can buld your dockers from 'scratch' image) 
+# GOOS=linux otimizes the go compilation for the container os
+#	
+RUN CGO_ENABLED=0 GOOS=linux go build -o ./main .
+#
+#
+####### second stage (runner)
+### Generate a new empty image "scratch" without overhead for Linux and Go
+FROM scratch as runner
+#
+### Copy the executable file /build/main from first (interim) image "builder" file to /app/ in the "runner" image
+COPY --from=builder /build/main /app/
+#
+### Set the actual WORKDIR to /app
+WORKDIR /app
+#
+### Start the executable main in the actual WORKDIR (/app)
+CMD ["./main"]
+#
+######### EOF #########
