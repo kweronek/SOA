@@ -7,20 +7,18 @@ sind daher nicht persistent. Der Anschluss einer MySQL-Datenbank ist vorbereiten
 Auch hiefür wir man in der Praxis ein GORM-Framework einsetzen.
 
 ## Starten und Stoppen des CRUD-APIs
-Das API kann direkt mit:
-```go run main.go```
-gestartet werden.
+Das API kann direkt mit `go run main.go` gestartet werden.  
 Das API kann in der Konsole mit Ctr-C gestoppt werden.  
 Beim Neustart kann es vorkommen, dass der Port 8080 weiterhin blockiert ist.  
 In diesem Fall müssen Sie eingreifen und das alte Programm entfernen.
 Hinweise hierzu finden Sie unter:  
-```(https://dev.to/sylwiavargas/how-to-properly-close-a-port-2p36)[How to properly close a port?]```
+[How to properly close a port?](https://dev.to/sylwiavargas/how-to-properly-close-a-port-2p36)
 Danach kann das API wie oben neu gestartet werden.
 
 ## Lesen der Daten
 Beim Starten des Server werden einige wenige Datensätze vorerzeugt!  
 Der Webserver lauscht dann auf Port 8080.  
-Zum Testen kann direkt im Browser eingegeben werden:
+Zum Testen kann direkt im Browser eingegeben werden:  
 ```http://localhost::8080/home```  
 ```http://localhost::8080/about```  
 ```http://localhost::8080/resources```  
