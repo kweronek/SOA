@@ -14,7 +14,7 @@ Das API kann in der Konsole mit Ctr-C gestoppt werden.
 Beim Neustart kann es vorkommen, dass der Port 8080 weiterhin blockiert ist.  
 In diesem Fall müssen Sie eingreifen und das alte Programm entfernen.
 Hinweise hierzu finden Sie unter:  
-```[How to properly close a port?](https://dev.to/sylwiavargas/how-to-properly-close-a-port-2p36)```
+```(https://dev.to/sylwiavargas/how-to-properly-close-a-port-2p36)[How to properly close a port?]```
 Danach kann das API wie oben neu gestartet werden.
 
 ## Lesen der Daten
