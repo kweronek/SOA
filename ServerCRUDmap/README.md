@@ -36,13 +36,32 @@ Rufen Sie danach mit
 alle Datensätze ab und suchen Sie den neu erzeugten Datensatz.
 
 ## Löschen von Datensätzen
-Versuchen Sie einen Datensatz zu löschen. Stellen Sie zunächst sicher, dass es der Datensatz existiert mit:
+Versuchen Sie einen Datensatz zu löschen. Stellen Sie zunächst sicher, dass es der Datensatz existiert mit:  
 ```http GET localhost::8080/resource/1```.  
-Löschen Sie den Datensatz mit
+Löschen Sie den Datensatz mit:  
 ```http DELETE localhost::8080/resource/1```.  
-Prüfen Sie danach, ob der Datensatz noch vorhanden ist oder gelöscht ist mit:
+Prüfen Sie danach, ob der Datensatz noch vorhanden ist oder gelöscht ist mit:  
 ```http GET localhost::8080/resource/1```.  
 
+## Ändern von Datensätzen
+Versuchen Sie einen Datensatz zu ändern. Stellen Sie zunächst sicher, dass es der Datensatz existiert mit:  
+```http GET localhost::8080/resource/1```.  
+Holen Sie sich eine Datensatz mittels 
+```http GET localhost::8080/resource/1```
+Kopieren Sie diesen in das "Body"-Feld des Postmans in einem  
+'http PUT http://localhost::8080/resource/1` request.  
+Passen Sie diesen Datensatz etwas an und schicken ihn ab.
+prüfen Sie danach mit
+```http GET localhost::8080/resource/1```
+ob der Datensätze noch existiert und ob dieser die ursprünglichen Daten oder die neuen Daten enthält.
 
+## "Accept"-Parameter
+In HTTP gibt es einen Header-Parameter Accept. Hiermit kann der Requester dem Provider mitteilen, welchen Antwortformat er erwarten.
+In unserem Fall gibt es die Möglichkeiten `text/html` und `text/plain`.  
+Versuchen Sie daher:
+`http GET http://localhost:8080/home`
+Einmal mit `Accept=text/html` und einmal mit `Accept=text/plain" im Header und vergleichen Sie die Ergebnisse.  
+Das funktioniert natürlich nur, wenn der Server diesen Header-Key auch auswertet.  
+Suchen Sie die entsprechende Stelle im Code!
 
 
