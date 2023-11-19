@@ -13,7 +13,7 @@ gestartet werden.
 Das API kann in der Konsole mit Ctr-C gestoppt werden.  
 Beim Neustart kann es vorkommen, dass der Port 8080 weiterhin blockiert ist.  
 In diesem Fall müssen Sie eingreifen und das alte Programm entfernen.
-Hinweise hierzu finden Sie unter:
+Hinweise hierzu finden Sie unter:  
 ```[How to properly close a port?](https://dev.to/sylwiavargas/how-to-properly-close-a-port-2p36)```
 Danach kann das API wie oben neu gestartet werden.
 
@@ -21,9 +21,9 @@ Danach kann das API wie oben neu gestartet werden.
 Beim Starten des Server werden einige wenige Datensätze vorerzeugt!  
 Der Webserver lauscht dann auf Port 8080.  
 Zum Testen kann direkt im Browser eingegeben werden:
-```http://localhost::8080/home```
-```http://localhost::8080/about```
-```http://localhost::8080/resources```
+```http://localhost::8080/home```  
+```http://localhost::8080/about```  
+```http://localhost::8080/resources```  
 ```http://localhost::8080/resource/1```
 
 ## Hinzufügen von Daten
