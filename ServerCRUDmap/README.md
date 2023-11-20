@@ -22,14 +22,15 @@ Zum Testen kann direkt im Browser eingegeben werden:
 ```http://localhost:8080/home```  
 ```http://localhost:8080/about```  
 ```http://localhost:8080/resources```  
-```http://localhost:8080/resource/1```
+```http://localhost:8080/resources/1```
 
 ## Hinzufügen von Daten
 Während beim Lesen http-GET vom Browser verwendet werden kann, müssen beim Hinzufügen von Daten http-PUT Requests gesendet werden.
 Aus diesem Grunde verwenden Sie ab hier den Postman!  
 Holen Sie sich eine Datensatz mittels 
-```http://localhost:8080/resource/1```
-Kopieren Sie diesen in das "Body"-Feld des Postmans in einem http POST http://localhost:8080 request.
+`http://localhost:8080/resources/1`
+Kopieren Sie diesen in das "Body"-Feld des Postmans in einen  
+`http POST http://localhost:8080/resources` request.
 Passen Sie diesen Datensatz etwas an und schicken ihn ab.
 Rufen Sie danach mit
 ```http://localhost:8080/resources```
@@ -37,22 +38,22 @@ alle Datensätze ab und suchen Sie den neu erzeugten Datensatz.
 
 ## Löschen von Datensätzen
 Versuchen Sie einen Datensatz zu löschen. Stellen Sie zunächst sicher, dass es der Datensatz existiert mit:  
-```http GET localhost:8080/resource/1```.  
+```http GET localhost:8080/resources/1```.  
 Löschen Sie den Datensatz mit:  
-```http DELETE localhost:8080/resource/1```.  
+```http DELETE localhost:8080/resources/1```.  
 Prüfen Sie danach, ob der Datensatz noch vorhanden ist oder gelöscht ist mit:  
-```http GET localhost:8080/resource/1```.  
+```http GET localhost:8080/resources/1```.  
 
 ## Ändern von Datensätzen
 Versuchen Sie einen Datensatz zu ändern. Stellen Sie zunächst sicher, dass es der Datensatz existiert mit:  
-```http GET localhost:8080/resource/1```.  
+```http GET localhost:8080/resources/1```.  
 Holen Sie sich eine Datensatz mittels 
-```http GET localhost:8080/resource/1```
+```http GET localhost:8080/resources/1```
 Kopieren Sie diesen in das "Body"-Feld des Postmans in einem  
-'http PUT http://localhost:8080/resource/1` request.  
+'http PUT http://localhost:8080/resources/1` request.  
 Passen Sie diesen Datensatz etwas an und schicken ihn ab.
 prüfen Sie danach mit
-```http GET localhost:8080/resource/1```
+```http GET localhost:8080/resources/1```
 ob der Datensätze noch existiert und ob dieser die ursprünglichen Daten oder die neuen Daten enthält.
 
 ## "Accept"-Parameter
@@ -64,4 +65,5 @@ Einmal mit `Accept=text/html` und einmal mit `Accept=text/plain" im Header und v
 Das funktioniert natürlich nur, wenn der Server diesen Header-Key auch auswertet.  
 Suchen Sie die entsprechende Stelle im Code!
 
-
+## Weitere Infos
+[REST-API-Tutorial](https://www.restapitutorial.com/lessons/httpmethods.html)
