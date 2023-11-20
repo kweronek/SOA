@@ -1,4 +1,4 @@
-# CRUD-API in Go from scratch
+# CRUD-API in Go
 
 ## Einleitung
 Das vorliegende CRUD-API ist zum Lernen gedacht. Deshalb wurde z.B. auf den Einsatz eines Multiplexers bewusst verzichtet. 
