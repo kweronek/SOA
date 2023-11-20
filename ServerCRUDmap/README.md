@@ -1,6 +1,6 @@
 # CRUD-API in Go from scratch
 
-## Indroduction
+## Einleitung
 Das vorliegende CRUD-API ist zum Lernen gedacht. Deshalb wurde z.B. auf den Einsatz eines Multiplexers bewusst verzichtet. 
 Es dient dazu, die http-MEchanismen auszuprobieren und zu verstehen. Die Daten werden aktuell in einer Map gespeicher und
 sind daher nicht persistent. Der Anschluss einer MySQL-Datenbank ist vorbereiten aber nicht vollständig implementiert.
