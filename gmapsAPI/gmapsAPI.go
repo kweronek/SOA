@@ -11,7 +11,7 @@ import (
 
 func main() {
 	// der apiKey dient der Autentisierung und Authorisierung bei Google
-//	apiKey := "AIzaSyDTWWzLzqHPwVgnjc18l8KHw2IMSLW4myY"
+	apiKey := "AIzaSyDTWWzLzqHPwVgnjc18l8KHw2IMSLW4myY"
 	// eine Instanz des clients mit dem apiKey wird zum Ansprechen der Google-maps-API erzeugt
 	client, _ := maps.NewClient(maps.WithAPIKey(apiKey))
 
