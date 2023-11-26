@@ -1,8 +1,8 @@
 package main
 
 import (
-	"crud/modelResource"
 	"crud/webServer"
+	"crud/modelResource"
 )
 
 func main() {
