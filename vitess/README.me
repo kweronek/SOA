@@ -1,5 +1,6 @@
 # Vitess
 
+# Vitess with Docker
 docker pull vitess/vttestserver:mysql80
 
 The docker image expects some of the environment variables to be set to function properly. The following table lists all the environment variables available along with their usages.
@@ -25,7 +26,7 @@ If you wish to keep the state of the test container across reboots, such as when
 
 When running in this mode, underlying MySQL table schemas, their data, and the Vitess VSchema objects are persisted under the provided --data_dir.
 
-For example:
+### Example 1 (single instance)
 
 docker run --name=vttestserver \
   -p 33577:33577 \
@@ -44,6 +45,7 @@ docker run --name=vttestserver \
   --keyspaces=test,unsharded \
   --num_shards=2,1
 
+### Example 2 (with shards)
 An example command to run the docker image is as follows :
 
 docker run --name=vttestserver \
