@@ -102,8 +102,8 @@ SHOW TABLES
 ```
 ```
 INSERT INTO Customers (Lastname, FirstName, Age, Address, PostalCode, City)
-VALUES ('Cardinal', 'Tom B. Erichsen', 19, 'Skagen 21', '4006', 'Stavanger');
-VALUES ('Maker', 'Kim', 23, 'Mainstreet 37', '50012', 'Meansville');
+VALUES ('Cardinal', 'Tom B. Erichsen', 19, 'Skagen 21', 4006, 'Stavanger');
+VALUES ('Maker', 'Kim', 23, 'Mainstreet 37', 50012, 'Meansville');
 ```
 ```
 SELECT * FROM Customers
