@@ -92,8 +92,8 @@ CREATE TABLE Customers (
     FirstName varchar(255),
     Age int,
     Address varchar(255),
-    City varchar(255),
     PostalCode int,
+    City varchar(255),
     CONSTRAINT PK_Person PRIMARY KEY (ID,LastName)
 );
 ```
@@ -101,9 +101,9 @@ CREATE TABLE Customers (
 SHOW TABLES
 ```
 ```
-INSERT INTO Customer (Lastname, FirstName, Address, City, PostalCode, Country)
-VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', '4006', 'Stavanger');
-VALUES ('Maker', 'Kim', 'Mainstreet 37', '50012', 'Meansville');
+INSERT INTO Customer (Lastname, FirstName, Age, Address, PostalCode, City)
+VALUES ('Cardinal', 'Tom B. Erichsen', 19, 'Skagen 21', '4006', 'Stavanger');
+VALUES ('Maker', 'Kim', 23, 'Mainstreet 37', '50012', 'Meansville');
 ```
 ```
 SELECT * FROM Customers
