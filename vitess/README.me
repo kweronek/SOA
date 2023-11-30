@@ -37,7 +37,7 @@ Due to a bug, the --port argument must also be present for correct operation.
 When running in this mode, underlying MySQL table schemas, their data, and the Vitess VSchema objects are persisted under the provided --data_dir.
 
 ### Example 1 (single instance)
-
+'''
 docker run --name=vttestserver \
   -p 33577:33577 \
   --health-cmd="mysqladmin ping -h127.0.0.1 -P33577" \
@@ -54,7 +54,7 @@ docker run --name=vttestserver \
   --mysql_bind_host=0.0.0.0 \
   --keyspaces=test,unsharded \
   --num_shards=2,1
-
+'''
 ### Example 2 (with shards)
 An example command to run the docker image is as follows :
 
@@ -77,3 +77,6 @@ Now, we can connect to the vtgate from a MySQL client as follows :
 mysql --host 127.0.0.1 --port 33577 --user "root"
 
 We have 2 keyspaces which we can use, test which has 2 shards and unsharded which has a single shard.
+
+### Reference
+[https://vitess.io/docs/18.0/overview/](https://vitess.io/docs/18.0/overview/)
