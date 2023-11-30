@@ -93,8 +93,7 @@ CREATE TABLE Customers (
     Age int,
     Address varchar(255),
     PostalCode int,
-    City varchar(255),
-    CONSTRAINT PK_Customers PRIMARY KEY (ID)
+    City varchar(255)
 );
 ```
 ```
