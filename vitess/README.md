@@ -87,26 +87,24 @@ USE <databasename>;
 ```
 ```
 CREATE TABLE Customers (
-    ID int NOT NULL,
+    ID int NOT NULL AUTO_INCREMENT,
     LastName varchar(255) NOT NULL,
     FirstName varchar(255),
     Age int,
     Address varchar(255),
     PostalCode int,
-    City varchar(255)
+    City varchar(255),
+    PRIMARY KEY (ID)
 );
 ```
 ```
 SHOW TABLES
 ```
 ```
-INSERT INTO Customers (ID,
-    LastName,
-    FirstName,
-    Age,
-    Address,
-    PostalCode, City)   VALUES
-    (1, 'Weronek', 'Karsten', 61, 'Kennedyallee 54', 60596, 'Frankfurt');
+INSERT INTO Customers (
+    ID, LastName, FirstName, Age, Address, PostalCode, City)
+VALUES
+    (1, 'Muster', 'Manfred', 61, 'Street 54', 60596, 'Frankfurt');
 ```
 ```
 SELECT * FROM Customers
