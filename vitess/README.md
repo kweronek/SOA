@@ -94,7 +94,7 @@ CREATE TABLE Customers (
     Address varchar(255),
     PostalCode int,
     City varchar(255),
-    CONSTRAINT PK_Person PRIMARY KEY (ID,LastName)
+    CONSTRAINT PK_Customers PRIMARY KEY (ID)
 );
 ```
 ```
