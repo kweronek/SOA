@@ -102,9 +102,9 @@ SHOW TABLES
 ```
 ```
 INSERT INTO Customers (
-    ID, LastName, FirstName, Age, Address, PostalCode, City)
+    LastName, FirstName, Age, Address, PostalCode, City)
 VALUES
-    (1, 'Muster', 'Manfred', 61, 'Street 54', 60596, 'Frankfurt');
+    ('Muster', 'Manfred', 61, 'Street 54', 60596, 'Frankfurt');
 ```
 ```
 SELECT * FROM Customers
