@@ -1,8 +1,11 @@
 # Vitess
 
 # Vitess with Docker
+
+## Docker Image for vitess
 docker pull vitess/vttestserver:mysql80
 
+## Environments Variables
 The docker image expects some of the environment variables to be set to function properly. The following table lists all the environment variables available along with their usages.
 Environment variable	Required	Use
 KEYSPACES	yes	Specifies the names of the keyspaces to be created as a comma separated value.
@@ -20,9 +23,16 @@ TABLET_REFRESH_INTERVAL	no	Interval at which vtgate refreshes tablet information
 
 Environment variables in docker can be specified using the -e aka --env flag.
 
-The vtgate listens for MySQL connections on 3 + the PORT environment variable specified. i.e. if you specify PORT to be 33574, then vtgate will be listening to connections on 33577, on the MYSQL_BIND_HOST which defaults to localhost. But this port will be on the docker container side. To connect to vtgate externally from a MySQL client, you will need to publish that port as well and specify the MYSQL_BIND_HOST to 0.0.0.0. This can be done via the -p aka --publish flag to docker. For eg: adding -p 33577:33577 to the docker run command will publish the container's 33577 port to your local 33577 port, which can now be used to connect to the vtgate.
+### Ports
+The vtgate listens for MySQL connections on 3 + the PORT environment variable specified. i.e. if you specify PORT to be 33574,  
+then vtgate will be listening to connections on 33577, on the MYSQL_BIND_HOST which defaults to localhost.  
+But this port will be on the docker container side. To connect to vtgate externally from a MySQL client, you will need to publish that port as well and  
+specify the MYSQL_BIND_HOST to 0.0.0.0. This can be done via the -p aka --publish flag to docker.  
+For eg: adding -p 33577:33577 to the docker run command will publish the container's 33577 port to your local 33577 port, which can now be used to connect to the vtgate.
 
-If you wish to keep the state of the test container across reboots, such as when running the vttestserver container as a database container in local application development environments, you may optionally pass the --persistent_mode flag, along with a --data_dir directory which is bound to a docker volume. Due to a bug, the --port argument must also be present for correct operation.
+### Persistence
+If you wish to keep the state of the test container across reboots, such as when running the vttestserver container as a database container in local application development environments, you may optionally pass the --persistent_mode flag, along with a --data_dir directory which is bound to a docker volume.  
+Due to a bug, the --port argument must also be present for correct operation.
 
 When running in this mode, underlying MySQL table schemas, their data, and the Vitess VSchema objects are persisted under the provided --data_dir.
 
@@ -48,6 +58,7 @@ docker run --name=vttestserver \
 ### Example 2 (with shards)
 An example command to run the docker image is as follows :
 
+```
 docker run --name=vttestserver \
   -p 33577:33577 \
   -e PORT=33574 \
@@ -60,7 +71,7 @@ docker run --name=vttestserver \
   --health-timeout=2s \
   --health-retries=5 \
   vitess/vttestserver:mysql80
-
+```
 Now, we can connect to the vtgate from a MySQL client as follows :
 
 mysql --host 127.0.0.1 --port 33577 --user "root"
