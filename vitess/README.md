@@ -3,7 +3,7 @@
 ## Vitess with Docker
 
 ### Docker Image for vitess
-docker pull vitess/vttestserver:mysql80
+`docker pull vitess/vttestserver:mysql80`
 
 ### Environments Variables
 The docker image expects some of the environment variables to be set to function properly. The following table lists all the environment variables available along with their usages.
