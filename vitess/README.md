@@ -101,9 +101,7 @@ CREATE TABLE Customers (
 SHOW TABLES
 ```
 ```
-INSERT INTO Customers (ID, Lastname, FirstName, Age, Address, PostalCode, City)
-VALUES (1, 'Cardinal', 'Tom B. Erichsen', 19, 'Skagen 21', 4006, 'Stavanger');
-VALUES (2, 'Maker', 'Kim', 23, 'Mainstreet 37', 50012, 'Meansville');
+INSERT INTO Customers (ID, LastName, FirstName, Age, Address, PostalCode, City) VALUES (1, 'Cardinal', 'Tom B. Erichsen', 19, 'Skagen 21', 4006, 'Stavanger'); VALUES (2, 'Maker', 'Kim', 23, 'Mainstreet 37', 50012, 'Meansville');
 ```
 ```
 SELECT * FROM Customers
