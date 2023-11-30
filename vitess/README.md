@@ -1,11 +1,11 @@
 # Vitess
 
-# Vitess with Docker
+## Vitess with Docker
 
-## Docker Image for vitess
+### Docker Image for vitess
 docker pull vitess/vttestserver:mysql80
 
-## Environments Variables
+### Environments Variables
 The docker image expects some of the environment variables to be set to function properly. The following table lists all the environment variables available along with their usages.
 Environment variable	Required	Use
 KEYSPACES	yes	Specifies the names of the keyspaces to be created as a comma separated value.
@@ -37,6 +37,7 @@ Due to a bug, the --port argument must also be present for correct operation.
 When running in this mode, underlying MySQL table schemas, their data, and the Vitess VSchema objects are persisted under the provided --data_dir.
 
 ### Example 1 (single instance)
+An example command to run the docker image is as follows :
 ```
 docker run --name=vttestserver \
   -p 33577:33577 \
@@ -75,7 +76,6 @@ docker run --name=vttestserver \
 Now, we can connect to the vtgate from a MySQL client as follows :
 
 `mysql --host 127.0.0.1 --port 33577 --user "root"`
-
 
 ### Reference
 [https://vitess.io/docs/18.0/overview/](https://vitess.io/docs/18.0/overview/)
