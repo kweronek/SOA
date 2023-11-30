@@ -11,7 +11,8 @@ The docker image expects some of the environment variables to be set to function
 Environment variable	Required	Use  
 | KEYSPACES | yes | Specifies the names of the keyspaces to be created as a comma separated value. |
 | --- | :--: | --: |
-| NUM_SHARDS | 	yes	| Specifies the number of shards in each keyspace. It is a comma separated value as well, read in conjunction with the KEYSPACES.| 
+| NUM_SHARDS | yes	+
+| Specifies the number of shards in each keyspace. It is a comma separated value as well, read in conjunction with the KEYSPACES. | 
 | PORT | 	yes	| The starting of the port addresses that vitess will use to register its components like vtgate, etc.| 
 | MYSQL_MAX_CONNECTIONS	| no	Maximum number of connections that the MySQL instance will support. If unspecified, it defaults to 1000.| 
 | MYSQL_BIND_HOST	| no	| Which host to bind the MySQL listener to. If unspecified, it defaults to 127.0.0.1.| 
