@@ -8,8 +8,9 @@ Make sure that Docker is installed and you Docker Daemon is up and running.
 
 ### Environments Variables
 The docker image expects some of the environment variables to be set to function properly. The following table lists all the environment variables available along with their usages.
-Environment variable	Required	Use
+Environment variable	Required	Use  
 | KEYSPACES | yes | Specifies the names of the keyspaces to be created as a comma separated value. |
+| --- | :--: | --: |
 | NUM_SHARDS | 	yes	| Specifies the number of shards in each keyspace. It is a comma separated value as well, read in conjunction with the KEYSPACES.| 
 | PORT | 	yes	| The starting of the port addresses that vitess will use to register its components like vtgate, etc.| 
 | MYSQL_MAX_CONNECTIONS	| no	Maximum number of connections that the MySQL instance will support. If unspecified, it defaults to 1000.| 
