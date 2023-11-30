@@ -9,18 +9,18 @@ Make sure that Docker is installed and you Docker Daemon is up and running.
 ### Environments Variables
 The docker image expects some of the environment variables to be set to function properly. The following table lists all the environment variables available along with their usages.
 Environment variable	Required	Use
-KEYSPACES	yes	Specifies the names of the keyspaces to be created as a comma separated value.
-NUM_SHARDS	yes	Specifies the number of shards in each keyspace. It is a comma separated value as well, read in conjunction with the KEYSPACES.
-PORT	yes	The starting of the port addresses that vitess will use to register its components like vtgate, etc.
-MYSQL_MAX_CONNECTIONS	no	Maximum number of connections that the MySQL instance will support. If unspecified, it defaults to 1000.
-MYSQL_BIND_HOST	no	Which host to bind the MySQL listener to. If unspecified, it defaults to 127.0.0.1.
-MYSQL_SERVER_VERSION	no	MySQL server version to advertise. If unspecified, it defaults to 8.0.31-vitess or 5.7.9-vitess according to the version of vttestserver run.
-CHARSET	no	Default charset to use. If unspecified, it defaults to utf8mb4.
-FOREIGN_KEY_MODE	no	This is to provide how to handle foreign key constraint in create/alter table. Valid values are: allow (default), disallow.
-ENABLE_ONLINE_DDL	no	Allow users to submit, review and control Online DDL. Valid values are: true (default), false.
-ENABLE_DIRECT_DDL	no	Allow users to submit direct DDL statements. Valid values are: true (default), false.
-PLANNER_VERSION	no	Sets the default planner to use when the session has not changed it. Valid values are: Gen4, Gen4Greedy, Gen4Left2Right.
-TABLET_REFRESH_INTERVAL	no	Interval at which vtgate refreshes tablet information from topology server.
+| KEYSPACES	| yes	| Specifies the names of the keyspaces to be created as a comma separated value.| 
+| NUM_SHARDS | 	yes	| Specifies the number of shards in each keyspace. It is a comma separated value as well, read in conjunction with the KEYSPACES.| 
+| PORT | 	yes	| The starting of the port addresses that vitess will use to register its components like vtgate, etc.| 
+| MYSQL_MAX_CONNECTIONS	| no	Maximum number of connections that the MySQL instance will support. If unspecified, it defaults to 1000.| 
+| MYSQL_BIND_HOST	| no	| Which host to bind the MySQL listener to. If unspecified, it defaults to 127.0.0.1.| 
+| MYSQL_SERVER_VERSION | no	| MySQL server version to advertise. If unspecified, it defaults to 8.0.31-vitess or 5.7.9-vitess according to the version of vttestserver run.| 
+| CHARSET	| no	| Default charset to use. If unspecified, it defaults to utf8mb4.| 
+| FOREIGN_KEY_MODE | no	| This is to provide how to handle foreign key constraint in create/alter table. Valid values are: allow (default), disallow.| 
+| ENABLE_ONLINE_DDL	| no	| Allow users to submit, review and control Online DDL. Valid values are: true (default), false.| 
+| ENABLE_DIRECT_DDL	| no	| Allow users to submit direct DDL statements. Valid values are: true (default), false.| 
+| PLANNER_VERSION	| no | Sets the default planner to use when the session has not changed it. Valid values are: Gen4, Gen4Greedy, Gen4Left2Right.| 
+| TABLET_REFRESH_INTERVAL	| no	| Interval at which vtgate refreshes tablet information from topology server.| 
 
 Environment variables in docker can be specified using the -e aka --env flag.
 
@@ -58,7 +58,7 @@ docker run --name=vttestserver \
   --num_shards=2,1
 ```
 ### Example 2 (with shards)
-An example command to run the docker image is as follows :
+An example command to run the docker image is as follows:
 
 ```
 docker run --name=vttestserver \
@@ -74,9 +74,39 @@ docker run --name=vttestserver \
   --health-retries=5 \
   vitess/vttestserver:mysql80
 ```
-Now, we can connect to the vtgate from a MySQL client as follows :
-
+### Connect Vitess-DB from command line
+Now, we can connect to the vtgate from a MySQL client as follows:
 `mysql --host 127.0.0.1 --port 33577 --user "root"`
 
-### Reference
+# Simple Test for Vitess Installation
+After the connection to Vitess-Server you may test the installation as follows:  
+```
+CREATE DATABASE <databasename>;
+USE <databasename>;
+```
+```
+CREATE TABLE Customers (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    Address varchar(255),
+    City varchar(255),
+    PostalCode int,
+    CONSTRAINT PK_Person PRIMARY KEY (ID,LastName)
+);
+```
+```
+SHOW TABLES
+```
+```
+INSERT INTO Customer (Lastname, FirstName, Address, City, PostalCode, Country)
+VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', '4006', 'Stavanger');
+VALUES ('Maker', 'Kim', 'Mainstreet 37', '50012', 'Meansville');
+```
+```
+SELECT * FROM Customers
+```
+
+# References
 [https://vitess.io/docs/18.0/overview/](https://vitess.io/docs/18.0/overview/)
