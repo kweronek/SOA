@@ -1,6 +1,7 @@
 # Vitess
 
 ## Vitess with Docker
+Make sure that Docker is installed and you Docker Daemon is up and running.
 
 ### Docker Image for vitess
 `docker pull vitess/vttestserver:mysql80`
