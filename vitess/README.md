@@ -108,7 +108,6 @@ INSERT INTO Customers (
 VALUES
     ('Muster', 'Manfred', 61, 'Street 54', 60596, 'Frankfurt');
 ```
-You will get an info either without error or a fail with error.
 Verify the insertion of your data by:
 ```
 SELECT * FROM Customers
