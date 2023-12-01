@@ -26,16 +26,14 @@ The docker image expects some of the environment variables to be set to function
 Environment variables in docker can be specified using the -e aka --env flag.
 
 ### Ports
-The vtgate listens for MySQL connections on 3 + the PORT environment variable specified. i.e. if you specify PORT to be 33574,  
-then vtgate will be listening to connections on 33577, on the MYSQL_BIND_HOST which defaults to localhost.  
-But this port will be on the docker container side. To connect to vtgate externally from a MySQL client, you will need to publish that port as well and  
-specify the MYSQL_BIND_HOST to 0.0.0.0. This can be done via the -p aka --publish flag to docker.  
+The vtgate listens for MySQL connections on 3 + the PORT environment variable specified.  
+i.e. if you specify PORT to be 33574, then vtgate will be listening to connections on 33577, on the MYSQL_BIND_HOST which defaults to localhost. But this port will be on the docker container side.  
+To connect to vtgate externally from a MySQL client, you will need to publish that port as well and specify the MYSQL_BIND_HOST to 0.0.0.0. This can be done via the -p aka --publish flag to docker.   
 For eg: adding -p 33577:33577 to the docker run command will publish the container's 33577 port to your local 33577 port, which can now be used to connect to the vtgate.
 
 ### Persistence
 If you wish to keep the state of the test container across reboots, such as when running the vttestserver container as a database container in local application development environments, you may optionally pass the --persistent_mode flag, along with a --data_dir directory which is bound to a docker volume.  
-Due to a bug, the --port argument must also be present for correct operation.
-
+Due to a bug, the --port argument must also be present for correct operation.  
 When running in this mode, underlying MySQL table schemas, their data, and the Vitess VSchema objects are persisted under the provided --data_dir.
 
 ### Example 1 (single instance)
@@ -60,7 +58,6 @@ docker run --name=vttestserver \
 ```
 ### Example 2 (with shards)
 An example command to run the docker image is as follows:
-
 ```
 docker run --name=vttestserver \
   -p 33577:33577 \
@@ -75,6 +72,7 @@ docker run --name=vttestserver \
   --health-retries=5 \
   vitess/vttestserver:mysql80
 ```
+
 ### Connect Vitess-DB from command line
 Now, we can connect to the vtgate from a MySQL client as follows:  
 ```
@@ -99,15 +97,19 @@ CREATE TABLE Customers (
     PRIMARY KEY (ID)
 );
 ```
+To verify the creation of the table use:
 ```
 SHOW TABLES
 ```
+Now insert data in the created table;
 ```
 INSERT INTO Customers (
     LastName, FirstName, Age, Address, PostalCode, City)
 VALUES
     ('Muster', 'Manfred', 61, 'Street 54', 60596, 'Frankfurt');
 ```
+You will get an info either without error or a fail with error.
+Verify the insertion of your data by:
 ```
 SELECT * FROM Customers
 ```
