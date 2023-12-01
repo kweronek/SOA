@@ -77,7 +77,7 @@ docker run --name=vttestserver \
 ```
 ### Connect Vitess-DB from command line
 Now, we can connect to the vtgate from a MySQL client as follows:
-`mysql --host 127.0.0.1 --port 33577 --user "root"`
+```mysql --host 127.0.0.1 --port 33577 --user "root"```
 
 # Simple Test for Vitess Installation
 After the connection to Vitess-Server you may test the installation as follows:  
