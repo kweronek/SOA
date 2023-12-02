@@ -1,6 +1,7 @@
 # Vitess
-As of 12/2023 the recommedation is to use vitess 18.0 with MySQL 8.0 as basis.  
-(The support of MySQL 5.7 and MariaDB is deprecated. As optional Extension Percona Server for MySQL version 8 can be used to optimise the architecture) 
+As of 12/2023 the recommedation is to use vitess 18.0 with MySQL 8.0 as default.  
+(The support of MySQL 5.7 and MariaDB is deprecated vor Vitess.  
+As optional Extension Percona Server for MySQL version 8 can be used to optimise the architecture) 
 
 ## Vitess with Docker
 There are many different ways to rails a Vitess DB-server. [https://vitess.io/docs/18.0/get-started/](https://vitess.io/docs/18.0/get-started/). The easiest way is to start a ready to run Vitess Docker image from Dockerhub.  
