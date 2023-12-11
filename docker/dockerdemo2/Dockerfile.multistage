@@ -19,7 +19,8 @@ COPY . /build/
 WORKDIR /build
 #
 ### Download Go modules and dependencies
-RUN go mod download
+RUN go mod init build
+RUN go mod tidy
 #
 ### Build the executable and name it main
 # With CGO_ENABLED=0 you got a staticaly-linked binary (see: https://en.wikipedia.org/wiki/Static_build) 

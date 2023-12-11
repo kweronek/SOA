@@ -19,7 +19,7 @@ func Encode() {
 
 	j, err := xml.Marshal(m)
 	if err != nil {
-		panic(err)
+		panic(err)/Users/u2001/Desktop/Screenshot 2023-04-01 at 17.55.40.png
 	}
 	fmt.Printf("Encoded XML-Object:\n%s%s", j, "\n\n")
 	fmt.Println("Alternative:")
