@@ -3,7 +3,12 @@ all: client server
 
 protoc:
 	@echo "Generating Go files"
-	cd src/proto && protoc --go_out=plugins=grpc:. *.proto
+//	cd src/proto && protoc --go_out=plugins=grpc:. *.proto
+	cd src/proto
+	protoc --go_out=. --go_opt=paths=source_relative \
+    		--go-grpc_out=. --go-grpc_opt=paths=source_relative \
+    		*.proto
+
 
 server: protoc
 	@echo "Building server"
@@ -18,7 +23,7 @@ client: protoc
 ##// github.com/pahanini/go-grpc-bidirectional-streaming-example/src/client
 
 clean:
-	go clean github.com/pahanini/go-grpc-bidirectional-streaming-example/...
+	// go clean github.com/pahanini/go-grpc-bidirectional-streaming-example/...
 	rm -f server client
 
 .PHONY: client server protoc
