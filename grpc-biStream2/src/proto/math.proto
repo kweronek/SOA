@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package protobuf;
+
+// option go_package = "/Users/u2001/Public/Workspace-go/src/tech-bricks/grpc/pahanini/go-grpc-bidirectional-streaming-example/proto";
+option go_package = ".;proto";
+
+
+service Math {
+  rpc Max (stream Request) returns (stream Response) {}
+}
+
+message Request {
+  int32 num = 1;
+}
+
+message Response {
+  int32 result = 1;
+}
