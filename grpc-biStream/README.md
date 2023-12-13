@@ -9,10 +9,18 @@
 - go 1.21.x or later
 - protobuf 25.1 or later
 - go support for protobuf installed
+  ```
+  $ go install google.golang.org/protobuf/cmd/protoc-gen-go@v1.28
+  $ go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.2
+  $ go get google.golang.org/grpc
+  ```
 
 ## Compile
 
 make all
+
+
+go get google.golang.org/grpc
 
 It should create two binaries `server` and `client`
 
