@@ -6,8 +6,8 @@
 
 ## Requirements
 
-- go 1.12
-- protobuf installed
+- go 1.21.x or later
+- protobuf 25.1 or later
 - go support for protobuf installed
 
 ## Compile
